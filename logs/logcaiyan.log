@@ -1,0 +1,268 @@
+2020-09-02 18:04:48,578 ERROR [test_01register.py 53] 用例账号为空，执行未通过
+2020-09-02 18:04:48,578 ERROR [test_01register.py 54] 2 != 1
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_01register.py", line 42, in test_register
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1
+2020-09-02 18:04:49,623 ERROR [test_01register.py 53] 用例密码位数大于18，执行未通过
+2020-09-02 18:04:49,624 ERROR [test_01register.py 54] 2 != 1
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_01register.py", line 42, in test_register
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1
+2020-09-02 18:04:49,894 ERROR [test_01register.py 53] 用例账户已存在，执行未通过
+2020-09-02 18:04:49,895 ERROR [test_01register.py 54] 2 != 0
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_01register.py", line 42, in test_register
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-09-02 18:04:50,576 ERROR [test_02login.py 46] 登录成功用例执行失败，失败信息如下：
+2020-09-02 18:04:50,576 ERROR [test_02login.py 47] 0 != 1001
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_02login.py", line 42, in test_login
+    self.assertEqual(excepted["code"],res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1001
+2020-09-02 18:04:51,973 ERROR [test_02login.py 46] 密码位数大于18用例执行失败，失败信息如下：
+2020-09-02 18:04:51,973 ERROR [test_02login.py 47] 1001 != 1
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_02login.py", line 42, in test_login
+    self.assertEqual(excepted["code"],res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1001 != 1
+2020-09-02 18:04:53,749 ERROR [test_03recharge.py 75] 用例用户id 输入错误，执行未通过
+2020-09-02 18:04:53,866 ERROR [test_03recharge.py 77] 2 != 1
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_03recharge.py", line 67, in test_recharge
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1
+2020-09-02 18:04:53,977 ERROR [test_03recharge.py 75] 用例用户id类型错误，执行未通过
+2020-09-02 18:04:54,058 ERROR [test_03recharge.py 77] 'JSON parse error' != '无权限访问，请检查参数'
+- JSON parse error
++ 无权限访问，请检查参数
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_03recharge.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: 'JSON parse error' != '无权限访问，请检查参数'
+- JSON parse error
++ 无权限访问，请检查参数
+
+2020-09-02 18:04:54,158 ERROR [test_03recharge.py 75] 用例充值金额为空，执行未通过
+2020-09-02 18:04:54,256 ERROR [test_03recharge.py 77] '金额为空' != '余额必须为数值型'
+- 金额为空
++ 余额必须为数值型
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_03recharge.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '金额为空' != '余额必须为数值型'
+- 金额为空
++ 余额必须为数值型
+
+2020-09-02 18:04:55,487 ERROR [test_04withdraw.py 67] 用例执行失败：提现成功
+2020-09-02 18:04:56,242 ERROR [test_04withdraw.py 67] 用例执行失败：用户id 不存在
+2020-09-02 18:04:56,428 ERROR [test_04withdraw.py 67] 用例执行失败：用户id 输入错误
+2020-09-02 18:04:56,619 ERROR [test_04withdraw.py 67] 用例执行失败：用户id类型错误
+2020-09-02 18:04:56,801 ERROR [test_04withdraw.py 67] 用例执行失败：提现金额为空
+2020-09-02 18:04:57,176 ERROR [test_04withdraw.py 67] 用例执行失败：提现金额类型错误
+2020-09-02 18:05:01,055 ERROR [test_05add_audit.py 54] 用例执行失败：按月借款类型错误
+2020-09-02 18:05:01,055 ERROR [test_05add_audit.py 55] '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)' != '借款类型错误'
+- 借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)
++ 借款类型错误
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_05add_audit.py", line 47, in test_add
+    self.assertEqual(res["msg"],expected["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)' != '借款类型错误'
+- 借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)
++ 借款类型错误
+
+2020-09-02 18:05:01,160 ERROR [test_05add_audit.py 54] 用例执行失败：按天借款类型错误
+2020-09-02 18:05:01,161 ERROR [test_05add_audit.py 55] '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)' != '借款类型错误'
+- 借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)
++ 借款类型错误
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_05add_audit.py", line 47, in test_add
+    self.assertEqual(res["msg"],expected["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)' != '借款类型错误'
+- 借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)
++ 借款类型错误
+
+2020-09-02 18:05:41,517 ERROR [test_01register.py 53] 用例账号为空，执行未通过
+2020-09-02 18:05:41,517 ERROR [test_01register.py 54] 2 != 1
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_01register.py", line 42, in test_register
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1
+2020-09-02 18:05:42,591 ERROR [test_01register.py 53] 用例密码位数大于18，执行未通过
+2020-09-02 18:05:42,591 ERROR [test_01register.py 54] 2 != 1
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_01register.py", line 42, in test_register
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1
+2020-09-02 18:05:42,854 ERROR [test_01register.py 53] 用例账户已存在，执行未通过
+2020-09-02 18:05:42,854 ERROR [test_01register.py 54] 2 != 0
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_01register.py", line 42, in test_register
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 0
+2020-09-02 18:05:43,549 ERROR [test_02login.py 46] 登录成功用例执行失败，失败信息如下：
+2020-09-02 18:05:43,549 ERROR [test_02login.py 47] 0 != 1001
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_02login.py", line 42, in test_login
+    self.assertEqual(excepted["code"],res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 0 != 1001
+2020-09-02 18:05:45,011 ERROR [test_02login.py 46] 密码位数大于18用例执行失败，失败信息如下：
+2020-09-02 18:05:45,011 ERROR [test_02login.py 47] 1001 != 1
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_02login.py", line 42, in test_login
+    self.assertEqual(excepted["code"],res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 1001 != 1
+2020-09-02 18:05:46,964 ERROR [test_03recharge.py 75] 用例用户id 输入错误，执行未通过
+2020-09-02 18:05:47,093 ERROR [test_03recharge.py 77] 2 != 1
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_03recharge.py", line 67, in test_recharge
+    self.assertEqual(expected["code"], res["code"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 2 != 1
+2020-09-02 18:05:47,220 ERROR [test_03recharge.py 75] 用例用户id类型错误，执行未通过
+2020-09-02 18:05:47,338 ERROR [test_03recharge.py 77] 'JSON parse error' != '无权限访问，请检查参数'
+- JSON parse error
++ 无权限访问，请检查参数
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_03recharge.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: 'JSON parse error' != '无权限访问，请检查参数'
+- JSON parse error
++ 无权限访问，请检查参数
+
+2020-09-02 18:05:47,453 ERROR [test_03recharge.py 75] 用例充值金额为空，执行未通过
+2020-09-02 18:05:47,588 ERROR [test_03recharge.py 77] '金额为空' != '余额必须为数值型'
+- 金额为空
++ 余额必须为数值型
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_03recharge.py", line 68, in test_recharge
+    self.assertEqual(expected["msg"], res["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '金额为空' != '余额必须为数值型'
+- 金额为空
++ 余额必须为数值型
+
+2020-09-02 18:05:50,159 ERROR [test_04withdraw.py 67] 用例执行失败：提现成功
+2020-09-02 18:05:50,997 ERROR [test_04withdraw.py 67] 用例执行失败：用户id 不存在
+2020-09-02 18:05:51,197 ERROR [test_04withdraw.py 67] 用例执行失败：用户id 输入错误
+2020-09-02 18:05:51,396 ERROR [test_04withdraw.py 67] 用例执行失败：用户id类型错误
+2020-09-02 18:05:51,602 ERROR [test_04withdraw.py 67] 用例执行失败：提现金额为空
+2020-09-02 18:05:52,011 ERROR [test_04withdraw.py 67] 用例执行失败：提现金额类型错误
+2020-09-02 18:05:55,977 ERROR [test_05add_audit.py 54] 用例执行失败：按月借款类型错误
+2020-09-02 18:05:55,977 ERROR [test_05add_audit.py 55] '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)' != '借款类型错误'
+- 借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)
++ 借款类型错误
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_05add_audit.py", line 47, in test_add
+    self.assertEqual(res["msg"],expected["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)' != '借款类型错误'
+- 借款期限单位为天的项目,期限范围为10到45天(包含10天和45天)
++ 借款类型错误
+
+2020-09-02 18:05:56,491 ERROR [test_05add_audit.py 54] 用例执行失败：按天借款类型错误
+2020-09-02 18:05:56,492 ERROR [test_05add_audit.py 55] '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)' != '借款类型错误'
+- 借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)
++ 借款类型错误
+Traceback (most recent call last):
+  File "/Users/zhangcaiyan/Desktop/lemon25/testcase/test_05add_audit.py", line 47, in test_add
+    self.assertEqual(res["msg"],expected["msg"])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 1233, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py", line 693, in fail
+    raise self.failureException(msg)
+AssertionError: '借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)' != '借款类型错误'
+- 借款期限单位为月的项目,期限范围为1到36个月(包含1个月和36个月)
++ 借款类型错误
+
