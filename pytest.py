@@ -15,7 +15,6 @@ headers ={
 response = requests.post(url=login_url,json=params,headers=headers)
 res = response.json()
 print(res)
-'''
 token = "Bearer" + " " + jsonpath(res,"$..token")[0]
 print(token)
 
@@ -29,7 +28,9 @@ headers2 = {
 response2 = requests.patch(url=audit_url,json=params2,headers=headers2)
 print(response2.json())
 
-'''
+
+
+
 
 
 
